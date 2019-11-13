@@ -16,8 +16,8 @@ int main()
 	strcpy(stu_1.name, "ChangHao");//对结构体相关变量赋值
 	stu_1.sex = 'M';
 	stu_1.score = 89.5;
-	    printf("No.:%ld\nname:%s\nsex:%c\nscore:%5.1f\n",stu_1.num,stu_1.name,stu_1.sex,stu_1.score);//输出结果；
-		printf("No.:%ld\nname:%s\nsex:%c\nscore:%5.1f\n", stu_1.num, stu_1.name, stu_1.sex, stu_1.score);//按指针类型输出函数；
+	printf("No.:%ld\nname:%s\nsex:%c\nscore:%5.1f\n", stu_1.num, stu_1.name, stu_1.sex, stu_1.score);//输出结果；
+	printf("No.:%ld\nname:%s\nsex:%c\nscore:%5.1f\n", (*p).num, (*p).name, (*p).sex, (*p).score);//按指针类型输出函数；
 	system("pause");
 	return 0;
 }
